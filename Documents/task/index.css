@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(218, 212, 212);
+   
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.container1, .container2{
+    
+    background-color: white;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100%;
+    
+}
+
+.container1{ 
+    margin-top: 100px;
+}
+
+.container2{
+    margin-top: -120px;
+} 
+
+.upper1, .upper2{
+    background: linear-gradient(10deg,rgb(64, 8, 176),rgb(148, 105, 247));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:0px solid black;
+    border-radius: 0px 0px 30px 30px;
+    margin-bottom: 0px;
+}
+
+
+
+.upper1 .score, .upper2 .score{
+    border: 0px solid black;
+    border-radius: 50px;
+    padding: 10px;
+    width:50px;
+    height: 50px;
+    text-align: center;
+    margin: 17px;
+    background: linear-gradient(rgb(64, 3, 163), rgb(123, 72, 250));
+    
+}
+
+.bottom1, .bottom2{
+    color:black;
+    border: 0px solid black;
+   padding: 10px;
+   display: flex;
+    flex-direction: column;
+    
+}
+
+#sum1{
+    color: rgb(236, 119, 119);
+    background-color: rgb(246, 238, 238);
+    margin: 8px;
+    padding-right: 5px;
+    
+}
+
+#sum2{
+    color:hsl(67, 91%, 26%);
+    background-color: #eff3d5;
+    margin: 8px;
+   
+}
+
+#sum3{
+    color: rgb(10, 160, 160);
+    background-color: rgb(220, 242, 242);
+    margin: 8px;
+    
+    
+}
+
+#sum4{
+    color:rgb(46, 47, 99);
+    background-color: rgb(240, 242, 252);
+    margin: 8px;
+   
+}
+
+#comment{
+    font-size: 10px;
+    margin: 10px;
+   opacity:0.7;
+}
+
+
+button{
+    width: 220px;
+    border-radius: 20px;
+    background-color: rgb(16, 8, 57);
+    color:white;
+    padding: 7px;
+    border:none;
+    margin-left: 14px;
+    
+    
+}
+
+.fa-solid, .fa-regular{
+    margin:10px;
+}
+
+.scor{
+    padding-left: 60px;
+    color:black;
+
+}
+
+.total{
+    color:black;
+    opacity: 0.4;
+    
+}
+
+.sp{
+    margin-right: 12px;
+}
+
+ #tot{
+    font-size: 8px;
+    opacity: 0.5;
+ }
+
+ #mark{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 2px;
+ }
+
+ #res{
+    font-size: 12px;
+    opacity: 0.8;
+ }
+
+ h4{
+    
+    text-align: left;
+ }
+
+ @media only screen and (min-width:992px){
+    .container2{
+        display:none;
+    }
+
+    .container1{
+        display:flex;
+        border-radius: 20px 0px 0px 20px;
+    }
+
+    .upper1{
+        border-radius: 20px 20px 20px 20px;
+        width:250px;
+    }
+
+    .bottom1{
+        width:250px;
+  }
+
+}  
+
+ 
