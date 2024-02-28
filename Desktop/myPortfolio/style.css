@@ -19,39 +19,82 @@
     border-radius: 10px;
     background-color: gray;
     padding: 5px;
+    transition: 0.3s ease-in-out;
    
     
 }
 
+
+
 #myimg{
     width:500px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#myimg:hover{
+    transform: scale(1.08);
 }
 
 .nav{
     display:flex;
+   
     
+}
+
+.black{
+    height:100px;
+    width:100%;
+    background-color: black;
+    border: 2px solid black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
 }
 
 .menu{
     margin-left: 30px;
-    padding: 10px;
+    padding: 5px;
     color: white;
     margin: 15px;
+    transition: 0.4s ease-in-out;
+    
     
 }
 
+.navLink{
+    transition: 0.2s ease-in-out;
+}
+
+.navLink:hover{
+    padding: 5px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+
 .menuc{
-    border: 0px solid white;
-    padding: 10px;
-    border-radius: 20px;
-    color: black;
-    background-color: white;
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    background-color:black;
+    font-size: 12px;
+}
+
+.menuc:hover{
+    border: none;
 }
 
 .home{
     display: flex;
     justify-content: center;
     width: 100%;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    
 }
 
 .about{
@@ -59,7 +102,6 @@
     display:flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
     text-align: left;
     border: 0px solid black;
     padding: 50px;
@@ -83,8 +125,14 @@
 
 .socials{
     margin-top: 60px;
+    transition: transform 0.3s ease-in-out;
     
     
+}
+
+.socials .imgg:hover{
+    background-color: hotpink;
+    transform: scale(1.08);
 }
 
 
@@ -106,6 +154,11 @@
     font-weight: 700;
 }
 
+.menu a {
+    color:white;
+    text-decoration: none;
+}
+
 /* About Me */
 .abaut{
     padding:20px;
@@ -114,43 +167,59 @@
     justify-content: center;
     align-items: center;
     background-color:rgb(214, 214, 214);
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+}
+
+.abaut h3{
+    font-family: "Montserrat", sans-serif;
+    margin: 10px;
 }
 .explore{
     font-weight: bold;
     font-size: 20px;
-    
+    margin-top: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
-.line1, .line2, .line3{
-    width:40px;
-    height:4px;
-    background-color: white;
-    border-radius: 50px;
-    border: 2px solid black;
-   
-}
+
+
+/* Harmburger */
+
+
 
 .harmbug{
     display: none;
     cursor: pointer;
-   
 
-
-
+    
 }
 
+  
 
 
 .line{
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 30px;
+    height: 2px; 
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-    /* background-color: white; */
-    color: black;
-} 
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: 5px;
+    
+   
+}
+.parent{
+    display: flex;
+    justify-content: center;
+}  
+
+.des1, .des2{
+    text-align: left;
+    
+}
+
 
 
 #myabout{
@@ -164,10 +233,16 @@
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    font-family: "Montserrat", sans-serif;
+    margin: 20px;
+}
+
+#about{
+    margin-top: 60px;
 }
 
 #sepa{
-    margin: 35px;
+    margin: 20px;
  
 }
 
@@ -187,16 +262,18 @@
 
 }
 
-#use{
+.use{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 30px;
     display: flex;
     margin: 10px;
     padding: 10px;
     text-align: end;
     border: 0px solid red;
-    width:150px;
-    margin: 30px;
+    /* width:100%; */
+    margin: 20px;
+    margin-left: -250px;
+    font-family: "Montserrat", sans-serif;
     
     
  
@@ -259,7 +336,7 @@
     }
     
     input{
-        width:400px;
+        width:390px;
         height: 30px;
         margin:10px;
     }
@@ -272,6 +349,21 @@
         margin: 10px;
      }
 
+     .lnk{
+        text-decoration: none;
+        font-size: 20px;
+        color:black;
+        
+     }
+
+     .lnk:hover{
+        font-size: 25px;
+        border: 2px solid black;
+        color:black;
+        padding: 5px;
+        border-radius: 5px;
+     }
+
      /* footer */
 
      .footer{
@@ -282,6 +374,7 @@
         padding: 20px;
         background-color: black;
         color:white;
+        
      }
 
      .footer a{
@@ -297,14 +390,30 @@
         margin: 10px;
      }
 
+     .social{
+        margin: 10px;
+       margin-bottom: 5px;
+     }
+
+     .img2{
+        width:40px;
+     }
+
 
      @media (max-width:768px){
         .harmbug{
             display: block;
-            
+            width: 50px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 2px solid black;
+            margin: 10px;
+            gap: 5px;
+            background-color: white;
+              
         }
-    
-        .harmbug.active .line:nth-child(2){
+
+       .harmbug.active .line:nth-child(2){
             opacity: 0;
         }
     
@@ -312,37 +421,50 @@
             transform: translateY(8px) rotate(45deg);
         }
     
-        .harmbug.active .line:nth-child(3){
+        .harmbug.active .line:nth-child(3){ 
             transform: translateY(-8px) rotate(-45deg);
         }
     
-       nav{
+       .nav{
+            
             position: fixed;
-            left: -100%;
-            top:70px;
+             left: -100%;
+            right: -50%; 
+            top:200px;
             gap:0px;
             flex-direction: column;
-            width:100%;
+            width:25%;
             text-align: center;
-            transition: 0.3s;
+            transition: 0.5s;
             background-color: black;
+            
         }
     
-        .line{
-            margin: 16px 0px;
-        }
-    
-        nav.active{
+       
+        .nav.active{
             left:0;
+        }
+
+        .menuc{
+            padding: 2px;
+        }
+
+        .menu a {
+            color:white;
+            font-size: 10px;
         }
 
         #home{
             display:flex;
-            flex-direction: column;
+            flex-direction:column-reverse;
+        }
+        body{
+            width:100%;
         }
         .container{
             width:50%;
             font-size: 15px;
+            
            
         }
 
@@ -360,8 +482,16 @@
         }
 
         #name{
-            font-size: 18px;
+            font-size: 16px;
             font-weight: bold;
+            
+        }
+
+        .intro{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         #ral{
             font-size: 12px;
@@ -422,5 +552,80 @@
             font-size: 10px;
         }
 
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .intro{
+            padding-top: 0px;
+        }
+
+        .black{
+            width:50%;
+            padding: 5px;
+            font-size: 12px;
+            height:auto;
+        }
+
+        .parent{
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        .card{
+            width:50%;
+        }
+
+        .des{
+            height:auto;
+            font-size: 10px;
+            padding: 10px;
+        }
+
+        .explore{
+            font-size: 10px;
+        }
+        #sepa{
+            width:80px;
+        }
+
+        .des3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+
+        }
+        .use{
+            font-weight: bold;
+            font-size: 12px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+            padding: 10px;
+            text-align: end;
+            border: 0px solid red;
+            
+            margin: 20px;
+            margin-left: 0px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        .lnk{
+            font-size: 12px;
+        }
+
+        .footer{
+            font-size: 10px;
+        }
+        .img2{
+            width:20px;
+        }
         
      }

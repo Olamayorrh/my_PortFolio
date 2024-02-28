@@ -8,8 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
 
 </head>
@@ -20,62 +21,87 @@
         
         <div class="home" id="home">
             <div class="about">
-                <img src="./images/logo1.png" alt="image1" id="img1">
+                <!-- <img src="./images/logo1.png" alt="image1" id="img1"> -->
                 <p class="intro"><span id='ral'>Hi, I am</span><br> <span id="name">MAYOWA OLANIYAN</span><br><span
                         id="dev">Fullstack Developer</span></p>
                 <div class="socials">
                     <a href="mailto:mayowafolaniyan@gmail.com" target="_blank"><img src="./images/mail.png" class="imgg"></a>
-                    <a href="https://github.com/Olamayorrh"><img src="./images/git.png" class="imgg img2"></a>
+                    <a href="https://github.com/Olamayorrh" target="_blank"><img src="./images/git.png" class="imgg"></a>
                     <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="_blank"><img src="./images/linked.png" class="imgg"></a>
+                   
                 </div>
             </div>
 
+          
+
             <div class="right">
                 <div class="nav">
-                    <p class="menu"><a href='#abb'>About me</a></p>
-                    <p class="menu"><a href='#ski'>Skills</a></p>
-                    <p class="menu menuc"><a href='#contact'>CONTACT ME</a></p>
+                    <p class="menu"><a href='#abb' class="navLink">About me</a></p>
+                    <p class="menu"><a href='#ski' class="navLink">Skills</a></p>
+                    <p class="menu menuc"><a href='#contact' class="navLink">CONTACT ME</a></p>
+                
                 </div>
-                <div class="harmbug" >
-                    <div class="line1 line"></div>
-                    <div class="line2 line"></div>
-                    <div class="line3 line"></div>
 
-                 </div>
+                <div class="harmbug" >
+                    <span class="line1 line"></span>
+                    <span class="line2 line"></span>
+                    <span class="line3 line"></span>
+    
+                </div>
+               
+            
 
                 <div class="pix">
                     <img src="./images/image4.jpg" id="myimg">
                 </div>
 
-                
             </div>
+
         </div>
+    
+     <div class="black">
+        <p id="black">In the symphony of software development, I harmonize the roles of designer, developer, and maintenance engineer. From the inception of an idea to its perpetuity in the digital realm, my commitment is unwavering.<br> As a software developer, I am not merely a coder; I am an orchestrator of digital experiences, a weaver of solutions, and a guardian of the digital frontier. The odyssey continues, with each line of code and every design element contributing to the ever-evolving tapestry of technology.</p>
+    </div>
 
 
         <div class="abaut" id="abb">
             <h3 id="about">About Me</h3>
 
-            <p id="myabout"> My name is Mayowa Olaniyan I am a fullstack software developer, I am passionate and
-                dedicated to my work!</p>
+            <p id="myabout"> My name is Mayowa Olaniyan I am a passionate and innovative software developer with keen interest in creating impactful solutions through code.<br>
+                I thrive in the dynamic world of technology, where everyline of code presents an opportunity to solve a problem and make positive impact.
+            </p>
 
             <div class="explore"> | Explore | </div>
 
             <img src="./images/separatorBlack1.png" id="sepa">
 
             <div id="card">
-                <card class="des">
-                    <h3>DESIGN</h3>
-                    <p>I can design a site based on your needs and suggestions, i can also design from scratch</p>
-                </card>
+                <div class="parent">
+                    <card class="des des1">
+                        <h3>DESIGN</h3>
+                        <p> I am an architect of user experiences, wielding wireframes and design thinking to breathe life into concepts.
+                            I ensure that software not only function seamlessly but also provides an intuitive and delightful journey for <br>users. 
+                            My design philosophy revolves around user-centricity,employing principles of accessibility, aesthetics, 
+                            and usability to create interfaces that resonate with end-users.
+                        </p>
+                    </card>
 
-                <card class="des">
-                    <h3>DEVELOPEMENT</h3>
-                    <p>I can design a site based on your needs and suggestions, i can also design from scratch</p>
-                </card>
+                    <card class="des des2">
+                        <h3>DEVELOPEMENT</h3>
+                        <p>As a developer, I immerse myself in the art of coding. Armed with proficiency in diverse programming <br>languages and frameworks,
+                            I construct the backbone of applications.Also as a developer, problem-solving<br> is my forte, whether it's building backend systems,
+                            optimizing front-end performance, or creating efficient algorithms, I relish the challenge of transforming ideas into functional, scalable,
+                            and elegant solutions.
+                        </p>
+                    </card>
+                </div>
 
-                <card class="des">
+                <card class="des des3">
                     <h3>MAINTENANCE</h3>
-                    <p>I can design a site based on your needs and suggestions, i can also design from scratch</p>
+                    <p>As a software engineer, I ensure the longevity and reliability of  software. This involves debugging, updating, and patching to adapt to evolving requirements<br>
+                        and to fortify against the relentless march of technological advancements. My commitment to maintaining clean and efficient code ensures  software remains resilient<br>
+                        against test of time.
+                    </p>
                 </card>
 
             </div>
@@ -107,7 +133,7 @@
                     </div>
                 </div>
 
-                <p id="use">LEARNING:</p>
+                <p class="use">LEARNING:</p>
                 <div class="lang">
                     <div class="lange"><img src="./images/nodejs.png" class="langg">
                         <p>NODEJS</p>
@@ -125,27 +151,27 @@
             
                 
                 <div class="card">
-                    <card><img src="./images/work2.jpg" class="crd"> <a href='https://olamayorrh.github.io/calculator/calculator.html'>Read More</a></card>
-                    <card><img src="./images/work3.jpg" class="crd"> <a href='https://olamayorrh.github.io/countDown/countdownTimer/index.html'>Read More</a></card>
-                    <card><img src="./images/work4.jpg" class="crd"> <a href=''>Read More</a></card>
+                    <card><img src="./images/work2.jpg" class="crd"> <a href='https://olamayorrh.github.io/calculator/calculator.html' class="lnk">Read More</a></card>
+                    <card><img src="./images/work3.jpg" class="crd"> <a href='https://olamayorrh.github.io/countDown/countdownTimer/index.html' class="lnk">Read More</a></card>
+                    <card><img src="./images/work4.jpg" class="crd"> <a href='' class="lnk">Read More</a></card>
                 </div>
         
                 <div class="card">
-                    <card><img src="./images/work5.jpg" class="crd"> <a href=''>Read More</a></card>
-                    <card><img src="./images/work1.jpg" class="crd"> <a href=''>Read More</a></card>
-                    <card><img src="./images/work6.jpg" class="crd"> <a href=''>Read More</a></card>
+                    <card><img src="./images/work5.jpg" class="crd"> <a href='' class="lnk">Read More</a></card>
+                    <card><img src="./images/work1.jpg" class="crd"> <a href='' class="lnk">Read More</a></card>
+                    <card><img src="./images/work6.jpg" class="crd"> <a href=''class="lnk">Read More</a></card>
                 </div>
         
         </div>
 
         <div class="contact" id="contact">
             <h3 id="conct">CONTACT</h3>
-            <form action="#">
+            <form action="mailto:mayowafolaniyan@gmail.com" id="form">
                 <input type="text" name="uname" id="uname" placeholder="Enter your name"><br>
                 <input type="text"  name="umail" id="umail" placeholder="Enter your email"><br>
                 <input type="text" name="num" id="num"  placeholder="Enter your number"><br>
                 <textarea placeholder="Message" name="mssg" id="mssg" rows="15px" cols="50px"></textarea><br>
-                <button>Send Message</button>
+                <button type="submit" id="btn">Send Message</button>
     
             </form>
         </div>
@@ -155,9 +181,9 @@
 
             <div class="socials social">
                 <a href="https://web.facebook.com/" target="_blank"><img src="./images/facebookIcon.png" class="imgg img2"></a>
-                <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="_blank"><img src="./images/linked.png" class="imgg"></a>
-                <a href="https://twitter.com/home" target="_blank"><img src="./images/twitterIcon.png" class="imgg"></a>
-                <a href="mailto:mayowafolaniyan@gmail.com" target="_blank"><img src="./images/mail.png" class="imgg"></a>
+                <a href="https://www.linkedin.com/feed/?trk=nav_back_to_linkedin" target="_blank"><img src="./images/linked.png" class="imgg img2"></a>
+                <a href="https://twitter.com/home" target="_blank"><img src="./images/twitterIcon.png" class="imgg img2"></a>
+                <a href="mailto:mayowafolaniyan@gmail.com" target="_blank"><img src="./images/mail.png" class="imgg img2"></a>
             </div>
             
             <p id="copy">&copy mayowa 2024</p>
