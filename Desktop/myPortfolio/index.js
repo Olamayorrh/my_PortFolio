@@ -2,21 +2,36 @@ let harmbug = document.querySelector(".harmbug");
 
 let link = document.querySelectorAll(".navLink");
 
-let menu = document.querySelector('.nav');
+let menu = document.querySelector('.menus');
 
 console.log(menu);
+
+// menu.style.maxHeight = "0"
 
  harmbug.addEventListener('click', ()=>{
    
 
     harmbug.classList.toggle("active");
-    menu.classList.toggle("active");
- });
+    if(menu.classList.toggle("active")){
+      menu.style.maxHeight = "300px"
+    }else{
+      menu.style.maxHeight = "0"
+    }
+ })
 
-document.querySelectorAll(".menuLink").forEach(n => {
+//  document.addEventListener("DOMContentLoaded",()=>{menu.style.maxHeight='0px'})
+   
+  
+
+ 
+
+
+document.querySelectorAll(".navLink").forEach(n => {
     n.addEventListener("click",()=>{
         harmbug.classList.remove("active");
-        menu.classList.remove("active");
+      if(menu.classList.remove("active")){
+        menu.style.maxHeight = "0"
+      }
     });
 });
 

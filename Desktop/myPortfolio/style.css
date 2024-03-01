@@ -5,10 +5,12 @@
 }
 
 .container{
+   
     width:100%;
-    height:100vh;
+    /* height:100vh; */
     display:grid;
     grid-template-columns: repeat(1,1fr);
+    
 }
 
 #img1{
@@ -35,7 +37,7 @@
     transform: scale(1.08);
 }
 
-.nav{
+ .menus{
     display:flex;
    
     
@@ -52,6 +54,7 @@
     align-items: center;
     font-family: "Open Sans", sans-serif;
     font-size: 14px;
+    /* padding-top: 220px; */
 }
 
 .menu{
@@ -89,6 +92,8 @@
 }
 
 .home{
+    position: relative;
+    top:0px;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -209,6 +214,10 @@
     margin: 5px;
     
    
+}
+
+.menus{
+    transition: all 0.3s ease-in-out;
 }
 .parent{
     display: flex;
@@ -401,7 +410,11 @@
 
 
      @media (max-width:768px){
+        .menus{
+            max-height: 0px;
+        }
         .harmbug{
+            
             display: block;
             width: 50px;
             border-radius: 4px;
@@ -424,21 +437,28 @@
         .harmbug.active .line:nth-child(3){ 
             transform: translateY(-8px) rotate(-45deg);
         }
-    
-       .nav{
-            
-            position: fixed;
-             left: -100%;
-            right: -50%; 
-            top:200px;
+
+        .menus.active{
+            transform: translate(0) !important;
+        }
+        
+        .menus{
+           
+            flex-direction: column;
+            position: relative;
+             left: 0;
+            border: 0px solid white;
+            display: flex;
             gap:0px;
             flex-direction: column;
-            width:25%;
+            width:100%;
             text-align: center;
             transition: 0.5s;
             background-color: black;
-            
+            transform: translateX(-200px);
         }
+
+      
     
        
         .nav.active{
@@ -476,10 +496,10 @@
             width:100px;
         }
 
-        .nav{
+        /* .nav{
             display: block;
             font-size: 10px;
-        }
+        } */
 
         #name{
             font-size: 16px;
@@ -539,8 +559,18 @@
         }
 
         input, textarea{
-            width:120px;
+            width:100px;
         }
+
+        #bk a{
+            font-size: 10px;
+        }
+
+        #copy{
+            font-size: 10px;
+        }
+
+
 
         #about, #skills, #port, #conct{
             border:2px solid black;
