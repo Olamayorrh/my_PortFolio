@@ -12,6 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="index.js" defer></script>
+    <script type="text/javascript" defer>
+        (function(){
+           emailjs.init({
+             publicKey: "JPioq9IYzdRZ2nzA4",
+           });
+        })();
+     </script>
 
 </head>
 
@@ -22,8 +29,9 @@
         <div class="home" id="home">
             <div class="about">
                 <!-- <img src="./images/logo1.png" alt="image1" id="img1"> -->
-                <p class="intro"><span id='ral'>Hi, I am</span><br> <span id="name">MAYOWA OLANIYAN</span><br><span
-                        id="dev">Fullstack Developer</span></p>
+                <p class="intra">Hi, I am</p>
+                <p class="name">MAYOWA OLANIYAN</p> 
+                <p class="dev">Fullstack Developer</p>
                 <div class="socials">
                     <a href="mailto:mayowafolaniyan@gmail.com" target="_blank"><img src="./images/mail.png" class="imgg"></a>
                     <a href="https://github.com/Olamayorrh" target="_blank"><img src="./images/git.png" class="imgg"></a>
@@ -47,29 +55,25 @@
                     <div class="menus">
                     <p class="menu"><a href='#abb' class="navLink">About me</a></p>
                     <p class="menu"><a href='#ski' class="navLink">Skills</a></p>
+                    <p class="menu"><a href='#port' class="navLink">Portfolio</a></p>
                     <p class="menu menuc"><a href='#contact' class="navLink">CONTACT ME</a></p>
                     </div>   
 
 
-                
-                
-                  </div>
-
-               
-               
-            
-
-                <div class="pix">
-                    <img src="./images/image4.jpg" id="myimg">
                 </div>
 
+               
+            <div class="pix">
+                    <img src="./images/image4.jpg" id="myimg">
             </div>
+
+         </div>
 
         </div>
     
-     <div class="black">
-        <p id="black">In the symphony of software development, I harmonize the roles of designer, developer, and maintenance engineer. From the inception of an idea to its perpetuity in the digital realm, my commitment is unwavering.<br> As a software developer, I am not merely a coder; I am an orchestrator of digital experiences, a weaver of solutions, and a guardian of the digital frontier. The odyssey continues, with each line of code and every design element contributing to the ever-evolving tapestry of technology.</p>
-    </div>
+        <div class="black">
+            <p id="black">In the symphony of software development, I harmonize the roles of designer, developer, and maintenance engineer. From the inception of an idea to its perpetuity in the digital realm, my commitment is unwavering.<br> As a software developer, I am not merely a coder; I am an orchestrator of digital experiences, a weaver of solutions, and a guardian of the digital frontier. The odyssey continues, with each line of code and every design element contributing to the ever-evolving tapestry of technology.</p>
+        </div>
 
 
         <div class="abaut" id="abb">
@@ -174,12 +178,12 @@
 
         <div class="contact" id="contact">
             <h3 id="conct">CONTACT</h3>
-            <form action="mailto:mayowafolaniyan@gmail.com" id="form">
-                <input type="text" name="uname" id="uname" placeholder="Enter your name"><br>
-                <input type="text"  name="umail" id="umail" placeholder="Enter your email"><br>
-                <input type="text" name="num" id="num"  placeholder="Enter your number"><br>
-                <textarea placeholder="Message" name="mssg" id="mssg" rows="15px" cols="50px"></textarea><br>
-                <button type="submit" id="btn">Send Message</button>
+            <form action="https://formsubmit.co/olamayorrh@gmail.com" method="POST">
+                <input type="text" name="uname" id="uname" placeholder="Enter your name" required><br>
+                <input type="text"  name="umail" id="umail" placeholder="Enter your email" required><br>
+                <input type="text" name="num" id="num"  placeholder="Enter your number" required><br>
+                <textarea placeholder="Message" name="mssg" id="mssg" rows="15px" cols="40px" required></textarea><br>
+                <button type="submit" id="btn" onclick="sendMail()">Send Message</button>
     
             </form>
         </div>

@@ -94,3 +94,14 @@ document.addEventListener("DOMContentLoaded",()=>{
   btn.addEventListener('click',contact);
  
 });
+
+
+let sendMail = ()=>{
+  let params = {
+    name :  name,
+    email : email,
+    number : number,
+    message : message
+  }
+  emailjs.send("service_j509uvu","template_j4nxkjj",params).then(alert("Email sent !!!"))
+}
